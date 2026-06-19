@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="https://cdn.pixabay.com/photo/2024/10/16/16/14/cat-9125207_1280.jpg" alt="cat">
+        <img src="https://cdn.pixabay.com/photo/2017/04/05/01/15/ocean-2203720_1280.jpg" alt="sunset">
+        <img src="https://cdn.pixabay.com/animation/2026/05/10/12/07/12-07-49-893_512.gif" alt="magic">
+        <img src="https://cdn.pixabay.com/photo/2025/10/14/12/07/forest-9893937_1280.png" alt="tree">
+        <img src="https://cdn.pixabay.com/animation/2025/08/12/08/46/08-46-20-158_512.gif" alt="sunrise">
+        <img src="https://cdn.pixabay.com/animation/2026/05/06/10/22/10-22-01-984_512.gif" alt="dico">
+    </div>
+
+</body>
+</html>
