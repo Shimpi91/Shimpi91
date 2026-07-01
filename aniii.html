@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cube Animation</title>
+
+<style>
+
+body{
+    margin:0;
+    background:linear-gradient(to right, rgb(243, 88, 113), rgb(113, 0, 128) rgb(162, 73, 213));
+    overflow:hidden;
+}
+
+.cube{
+    width:150px;
+    height:150px;
+    background:red;
+    position:relative;
+    top:200px;
+
+    animation:roll 5s infinite alternate;
+}
+
+@keyframes roll{
+
+    0%{
+        left:0;
+        transform:rotate(0deg);
+        background:red;
+    }
+
+    25%{
+        background:orange;
+    }
+
+    50%{
+        background:yellow;
+    }
+
+    75%{
+        background:lime;
+    }
+
+    100%{
+        left:85%;
+        transform:rotate(1080deg);
+        background:rgb(197, 103, 234);
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cube"></div>
+
+</body>
+</html>
